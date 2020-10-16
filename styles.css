@@ -11,8 +11,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 html { 
    font-size: 62.5%;
-   font-family: 'East Sea Dokdo', cursive;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Karla', sans-serif;
 }
 body{ 
    color: rgb(0, 0, 0);
@@ -28,17 +27,13 @@ ul {
 a { 
    text-decoration: none;
    color: rgb(0, 0, 0);
-   font-size: 35px;
+   font-size: 3em;
 }
 
 img { 
    max-width: 100%;
 }
 
-.headerImg { 
-   display: relative;
-   top: 0;
-}
 
 .wrapper{ 
    max-width:1300px; ;
@@ -46,60 +41,138 @@ img {
    margin: 0 auto;
 }
 
-button{ 
-   background-color: #0178A5;
-}
 
-button:hover,
-button:focus {
-   color: black;
-   background-color: white;
-   border-color: black;
-}
-
-
-/* Nav */
-nav { 
-   line-height: 35px;
-   letter-spacing: 1.9px;
-}
-.headerNav ul { 
-   width: 70%;
-}
-.headerNav li { 
-   display: inline-block;
-   margin: 10px;
-}
-nav a { 
-   font-family: 'Roboto', sans-serif;
-   font-size: 20px;
-}
-
+/* Header */
 .container { 
    display: flex;
-   text-align: center;
-   color: white;
 }
 
-.centered {
+.headerText {
    position: absolute;
-   top: 50%;
+   top:40%;
    left: 50%;
    transform: translate(-50%, -50%);
    z-index: 100;
-
 }
 
-.centered2 {
+.headerText p { 
+   font-weight: 700;
+   font-size: 1em;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Buttons */
+.buttonsDiv {
    position: absolute;
    top: 70%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
 
+.buttons ul { 
+   border: 2px black solid;
+}
+
+.buttons li { 
+   padding: 10px;
+   margin: 20px;
+   font-size: 1em;
+   font-weight: 400;
+   background-color: rgba(0, 0, 0, 0.625);
+}
+
+.buttons a { 
+   color: white;
+}
+
+.buttons li:hover,
+.buttons li:focus {
+   background-color:rgba(0, 0, 0, 0.886);
+   border-color: black;
+}
+
+/* Header Text */
+h1, h2 { 
+   font-family: 'Karla', sans-serif;
+}
+
+h1 { 
+   font-size: 5em;
+   letter-spacing: 2px;
+   font-weight: 700;
+   text-align: left;
+   width: 55%;
+   border-bottom: 1px solid black;
+}
+
+h2{ 
+   font-size: 2em;
+   font-weight: 400;
+   text-align: left;
+   letter-spacing: 2px;
+   width: 90%;
+}
+
+.headerImg { 
+   display: flex;
+}
+
+/* Nav */
 
 .navMenu{ 
    position: absolute;
    top: 8px;
    right: 16px;
+   line-height: 35px;
+   letter-spacing: 1.9px;
+}
+
+.navMenu ul { 
+   width: 70%;
+}
+.navMenu li { 
+   display: inline-block;
+   margin: 10px;
+}
+.navMenu a { 
+   font-family: 'Roboto', sans-serif;
+   font-size: 2em;
+}
+
+.navMenu li:hover,
+.navMenu li:focus {
+   color: white;
+   background-color:rgba(0, 0, 0, 0.468);
+   border-color: black;
+}
+
+.navMenu a:hover,
+.navMenu a:focus {
+   color: white;
+}
+
+/* Three Divs */
+
+.threeDivsContainer { 
+   display: flex;
+   height: 40vh;
+}
+
+.threeDivs { 
+   text-align: left;
+   width: 30%;
+   margin: 20px;
+}
+
+.designOrientated { 
+   text-align: center;
+   width: 60%;
+}
+
+
+
+/* Recent Works */
+.pencilImg { 
+   width: 30%;
 }
