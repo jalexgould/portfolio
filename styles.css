@@ -156,7 +156,7 @@ h2{
 
 .threeDivsContainer { 
    display: flex;
-   height: 50vh;
+   height: 40vh;
    text-align: center;
 }
 
@@ -223,7 +223,7 @@ h2{
 }
 .servicesTitle p { 
    width: 90%;
-   font-size: 1.3em;
+   font-size: 1.8em;
 }
 
 .services { 
@@ -237,7 +237,9 @@ h2{
    
 }
 .services p { 
-   font-size: 1.4em;
+   font-size: 1.3em;
+   /* margin: 15px; */
+   padding: 10px;
    width: 90%;
    text-align: center;
    border-right: 1px solid grey;
@@ -264,11 +266,12 @@ h2{
 
 .recentWorks p{
    display: flex;
-   width: 90%;
+   width:100%;
    font-size: 1.3em;
    text-align: center;
    font-size: 1.5em;
    margin-bottom: 5%;
+   margin-left: 18%;
 }
 
 .recentLinks { 
@@ -276,6 +279,7 @@ h2{
 }
 
 .recentLinks a { 
+   font-weight: 700;
    margin-bottom: 1px solid grey;
 }
 
