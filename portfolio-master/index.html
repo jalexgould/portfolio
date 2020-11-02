@@ -4,36 +4,36 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+   <link rel="stylesheet" href="./contact.css">
    <link rel="stylesheet" href="./styles.css">
    <title>Portfolio</title>
 </head>
 <body>
    <header>
-      <div class="container">
-         <nav>
+      <div class="headerText">
+         <img class="headerImg" src="./assets/bench-accounting-nvzvOPQW0gc-unsplash.jpg" alt="white wall with white desk and brown chair">
+         <nav class="container">
             <ul class="navMenu">              
-               <li><a href="./index.html">Home</a></li>
-               <!-- <li><a href="#">About</a></li> -->
+               <li><a href="./about.html">About</a></li>
                <li><a href="#bottom">Portfolio</a></li>
                <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <div class="centering">
+               <h1>Alex Gould</h1>
+               <h2 class="headerH2">Welcome to my portfolio , I am a front-end web developer with a background in design and project management.</h2>
+            </div>
+               <div class="buttonsDiv">
+                  <ul class="buttons">
+                     <li><a href="#bottom">Portfolio</a></li>
+                     <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+               </div>
          </nav>
-         <img class="headerImg" src="./assets/bench-accounting-nvzvOPQW0gc-unsplash.jpg" alt="white wall with white desk and brown chair">
-      </div>
-      <div class="headerText">
-         <h1>Alex Gould</h1>
-         <h2>Welcome to my portfolio , I am a front-end web developer with a background in design and project management.</h2>
-      </div>
-      <div class="buttonsDiv">
-         <ul class="buttons">
-            <li><a href="">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-         </ul>
-         
       </div>
    </header>
    <section class="threeDivsContainer">
-      <div class="threeDivs">
+      <!-- <div class="threeDivs">
          <h3>Detail of Design</h3>
          <p>Attention to detail in a user experience can be the difference between a satisfied user and an annoyed one.</p>
       </div>
@@ -44,7 +44,7 @@
       <div class="threeDivs">
          <h3>Clean Design</h3>
          <p>Clean and Intuitive design helps you and your products stand out from the crowd .</p>
-      </div>
+      </div> -->
    </section>
    <section class="designOrientated">
          <div class="designOrientatedText">
@@ -76,36 +76,115 @@
          </div>
    </section>
    <section class="recentSec">
+      <p id="bottom"></p>
       <div class="recentText">
          <h4 class="recentH4">Recent Projects</h4>
          <p>Below are three recent projects I have been able to be apart of or completed myself</p>
       </div>
-               <div class="recentDiv1">
-                  <div class="recentLinks">
-                     <ul>       
-                        <li><a href="https://podcast-palz.github.io/podcast-planner/">Podcast Planner</a></li>
-                     </ul>
-                     <img class="podcast recentImg" src="./assets/podcast.png" alt="wood carving of the word create against white background">
-                  </div>
+         <div class="recentDiv1">
+            <div class="recentLinks">
+               <ul>       
+                  <li><a href="https://podcast-palz.github.io/podcast-planner/"></a></li>
+               </ul>
+               <img class="podcast recentImg" src="./assets/podcast.png" alt="wood carving of the word create against white background">
+            </div>
+            <div class="projectText">
+               <a href="https://podcast-palz.github.io/podcast-planner/"><h4>Podcast Planner</h4></a>
+               <p>Podcast Planner is a web app that allows the user to specify the length of time they wish to listen to one or more podcasts then filters the search results accordingly. The returned searches can be added to a personal playlist that stores the users information in the browser using Firebase. This was a project that was built with three other developers using React and Firebase.</p>
+               <div class="fontAwesome">
+                  <ul>
+                     <li><i class="fab fa-github fa-5x"></i></li>
+                     <li><i class="fab fa-html5 fa-5x"></i></li>
+                     <li><i class="fab fa-css3-alt fa-5x"></i> </li>
+                     <li><i class="fab fa-react fa-5x"></i></li>
+                     <li><i class="fas fa-code-branch fa-5x"></i></li>
+                     <li><i class="fab fa-js-square fa-5x"></i></li>
+                  </ul>
+                  <ul>
+                     <li><p>Github</p></li>
+                     <li><p>HTML5</p></li>
+                     <li><p>CSS3</p></li>
+                     <li><p>React</p></li>
+                     <li><p>Firebase</p></li>
+                     <li><p>JavaScript</p></li>
+                  </ul>
                </div>
-               <div class="recentDiv2">
-                  <div class="recentLinks">
-                     <ul>            
-                     <li><a href="https://spaceapp-juno.github.io/kristenDeloreyAlexGouldSpaceAppJuno/">Space Out</a></li>
-                     </ul>
-                     <img class="spaceApp recentImg" src="./assets/space out.png" alt="wood carving of the word create against white background">
-                  </div>
+            </div>
+         </div>
+         <div class="recentDiv2">
+            <div class="projectText">
+               <h4>Space Out</h4>
+               <p>Space Out is a web app that allows the to track where the International Space Station is currently, as well as calculate how far the user is from the Space Station at any given time. This was a project that was created with one other developer using paired programming, this is a API-powered application written with jQuery.
+               </p>
+               <div class="fontAwesome">
+                  <ul>
+                     <li><i class="fab fa-github fa-5x"></i></li>
+                     <li><i class="fab fa-html5 fa-5x"></i></li>
+                     <li><i class="fab fa-css3-alt fa-5x"></i> </li>
+                     <li><i class="fas fa-dollar-sign fa-5x"></i></li>
+                  </ul>
+                  <ul>
+                     <li><p>Github</p></li>
+                     <li><p>HTML5</p></li>
+                     <li><p>CSS3</p></li>
+                     <li><p>JQuery</p></li>
+                  </ul>
                </div>
-               <div class="recentDiv1">
-                  <div class="recentLinks">
-                     <ul>            
-                        <li><a href="https://jalexgould.github.io/project-five/">Cook Book</a></li>
-                     </ul>
-                     <img class="recipe recentImg" src="./assets/recipe.png" alt="wood carving of the word create against white background">
-                  </div>
+            </div>
+            <div class="recentLinks">
+               <ul>            
+               <li><a href="https://spaceapp-juno.github.io/kristenDeloreyAlexGouldSpaceAppJuno/">Space Out</li>
+               </ul>
+               <img class="spaceApp recentImg" src="./assets/space out.png" alt="wood carving of the word create against white background">
+            </div>
+         </div>
+         <div class="recentDiv1">
+            <div class="recentLinks">
+               <ul>            
+                  <li><a href="https://jalexgould.github.io/project-five/">Cook Book</a></li>
+               </ul>
+               <img class="recipe recentImg" src="./assets/recipe.png" alt="wood carving of the word create against white background">
+            </div>
+            <div class="projectText">
+               <h4>Cook Book</h4>
+               <p>Cook Book is a web app that generates random recipes for the user using a JSON database to store the selected recipes.This was a project that was a solo project, this is a Firebase powered application written using react.</p>
+               <div class="fontAwesome">
+                  <ul>
+                     <li><i class="fab fa-github fa-5x"></i></li>
+                     <li><i class="fab fa-html5 fa-5x"></i></li>
+                     <li><i class="fab fa-css3-alt fa-5x"></i> </li>
+                     <li><i class="fab fa-react fa-5x"></i></li>
+                     <li><i class="fas fa-code-branch fa-5x"></i></li>
+                     <li><i class="fab fa-js-square fa-5x"></i></li>
+                  </ul>
+                  <ul>
+                     <li><p>Github</p></li>
+                     <li><p>HTML5</p></li>
+                     <li><p>CSS3</p></li>
+                     <li><p>React</p></li>
+                     <li><p>Firebase</p></li>
+                     <li><p>JavaScript</p></li>
+                  </ul>
                </div>
-            <!-- <img class="pencilImg" src="./assets/white pencil.jpg" alt="pencil against white background"> -->
+            </div>
+         </div>
+         <!-- <div class="pencilDiv">
+            <img class="pencilImg" src="./assets/white pencil.jpg" alt="pencil against white background">
+         </div> -->
       </div>
    </section>
+   <footer>
+      <div class="footerDiv">
+         <nav class="footerMenu">
+            <ul>              
+               <li><a href="./index.html">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#bottom">Portfolio</a></li>
+               <li><a href="./contact.html">Contact</a></li>
+            </ul>
+         </nav>
+         <p>Design and Development by Alex Gould 2020 ©</p>
+      </div>
+   </footer>
 </body>
 </html>

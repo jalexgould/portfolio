@@ -31,6 +31,7 @@ a {
 }
 
 img { 
+   width: 100%;
    max-width: 100%;
 }
 
@@ -43,31 +44,105 @@ img {
 
 
 /* Header */
+header { 
+   width: 100%;
+}
+/* Header Text */
+.headerText {
+   flex-direction: column;
+   justify-content: center;
+}
+
 .container { 
+   width: 100%;
+   position: relative;
+}
+
+/* Nav */
+
+.navMenu{ 
+   display: flex;
+   width: 100%;
+   flex-wrap: nowrap;
+   justify-content: end;
+   line-height: 35px;
+   letter-spacing: 1.9px;
+}
+
+.navMenu li { 
+   display: inline-block;
+   margin: 10px;
+}
+.navMenu a { 
+   font-family: 'Roboto', sans-serif;
+   font-size: 2em;
+}
+
+
+/* Hover States */
+.navMenu li:hover,
+.navMenu li:focus {
+   color: white;
+   background-color:rgba(0, 0, 0, 0.468);
+   border-color: black;
+}
+
+.navMenu a:hover,
+.navMenu a:focus {
+   color: white;
+}
+
+/* Header Text */
+.centering{ 
+   display: flex;
+   flex-direction: column;
+   margin-left: 2em;
+}
+
+h1, h2 { 
+   font-family: 'Karla', sans-serif;
+   justify-content: center;
+}
+
+h1 { 
+   font-size: 5em;
+   letter-spacing: 2px;
+   font-weight: 700;
+   text-align: left;
+   width: 40%;
+   border-bottom: 1px solid black;
+}
+
+.headerH2 { 
+   font-size: 2em;
+   font-weight: 400;
+   text-align: left;
+   letter-spacing: 2px;
+   width: 45%;
+}
+
+.headerImg { 
+   position: absolute;
    display: flex;
 }
 
-.headerText {
-   position: absolute;
-   top:40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 100;
-}
-
-.headerText p { 
-   font-weight: 700;
-   font-size: 1em;
-   font-style: italic;
-   text-align: left;
-}
 
 /* Buttons */
 .buttonsDiv {
-   position: absolute;
+   display: flex;
+   width: 100%;
+   /* position: absolute;
    top: 70%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */
+}
+
+.buttons { 
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   width: 18em;
+   margin-left: 20em;
 }
 
 .buttons ul { 
@@ -92,66 +167,6 @@ img {
    border-color: black;
 }
 
-/* Header Text */
-h1, h2 { 
-   font-family: 'Karla', sans-serif;
-}
-
-h1 { 
-   font-size: 5em;
-   letter-spacing: 2px;
-   font-weight: 700;
-   text-align: left;
-   width: 55%;
-   border-bottom: 1px solid black;
-}
-
-h2{ 
-   font-size: 2em;
-   font-weight: 400;
-   text-align: left;
-   letter-spacing: 2px;
-   width: 90%;
-}
-
-.headerImg { 
-   display: flex;
-}
-
-/* Nav */
-
-.navMenu{ 
-   position: absolute;
-   top: 8px;
-   right: 16px;
-   line-height: 35px;
-   letter-spacing: 1.9px;
-}
-
-.navMenu ul { 
-   width: 70%;
-}
-.navMenu li { 
-   display: inline-block;
-   margin: 10px;
-}
-.navMenu a { 
-   font-family: 'Roboto', sans-serif;
-   font-size: 2em;
-}
-
-.navMenu li:hover,
-.navMenu li:focus {
-   color: white;
-   background-color:rgba(0, 0, 0, 0.468);
-   border-color: black;
-}
-
-.navMenu a:hover,
-.navMenu a:focus {
-   color: white;
-}
-
 /* Three Divs */
 
 .threeDivsContainer { 
@@ -160,9 +175,11 @@ h2{
    text-align: center;
    width: 95%;
    margin-left: 3em;
+   margin-bottom: 55em;
 }
 
-.threeDivs { 
+
+/* .threeDivs { 
    flex-wrap: wrap;
    text-align: left;
    width: 33%;
@@ -184,7 +201,7 @@ h2{
    font-weight: 400;
    font-size: 1.7em;
    line-height: 1.8em;
-}
+} */
 
 /* design orientated  */
 
@@ -211,7 +228,7 @@ h2{
 }
 
 .createImg { 
-   width: 95%;
+   width: 90%;
    height: 75vh;
    margin: 30px 30px 0 30px;
    border: 1px solid black;
@@ -221,17 +238,19 @@ h2{
 
 .servicesSec{ 
    color: rgba(0, 0, 0, 0.968);
+   height: 110vh;
+   margin-bottom: 5em;
    background-color:rgba(7, 7, 7, 0.029);
-   height: 70vh;
 }
 
-.servicesTitle { 
-   margin-left: 20%;
+.servicesTitle {
+   display: flex;
+   flex-direction: column;
    font-weight: 400;
    text-align: center;
-   width: 65%;
-   height: 5vh;
-   
+   padding-top:5vh;
+   height: 40vh;
+
 }
 
 .servicesTitle h2 { 
@@ -241,22 +260,26 @@ h2{
    padding: .3em;
 }
 .servicesTitle p { 
-   width: 90%;
    font-size: 2.2em;
 }
 
 .services { 
    display: flex;
    margin: 10% 0 10% 0;
+   height: 50vh;
+   color: rgba(0, 0, 0, 0.968);
+   background-color:rgba(7, 7, 7, 0.019);
 }
 
 .services h4 { 
+   flex-wrap: wrap;
    font-size: 2.5em;
    width: 90%;
    text-align: center;
    
 }
 .services p { 
+   flex-wrap: wrap;
    font-size: 1.7em;
    /* margin: 15px; */
    padding: 20px;
@@ -268,33 +291,37 @@ h2{
 
 /* Recent Works */
 .recentSec { 
-   width: 90%;
+   width: 100%;
 }
 
 .recentText { 
    display: flex;
+   flex-wrap: wrap;
+   height: 55vh;
+   width: 100%;
+   margin-top: 20em;
    text-align: center;
-   margin-left: 5em;
-   font-weight: 400;
-   text-align: center;
-   width: 90%;
-   height: 45vh;
+   color: rgba(0, 0, 0, 0.968);
+
 }
 
-.recentText h4 { 
+.recentH4 { 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
    font-weight: 700;
    font-size: 4em;
-   text-align: left;
-   width: 50%;
-   border-bottom: 1px solid black;
+   text-align:center;
+   width: 100%;
 
 }
 
 .recentText p{
+   align-items: center;
+   flex-direction: column;
    flex-wrap: wrap;
-   justify-content: end;
-   width: 70%;
-   text-align: left;
+   width:100%;
+   text-align: center;
    font-size: 2em;
 }
 
@@ -302,15 +329,18 @@ h2{
    display: flex;
    position: relative;
    height: 500px;
-   width: 95%;
-   margin:0em 1em 4em 4em;
+   width: 97%;
+   margin:1em 0 4em 2em;
 }
 
 .recentDiv2{ 
    display: flex;
+   position: relative;
    justify-content: end;
-   height: 500px;
-   margin:4em -10em 4em 0em;
+   height: 550px;
+   width: 97%;
+   background-color:rgba(7, 7, 7, 0.064);
+   margin-bottom:3em;
 
 }
 
@@ -327,26 +357,75 @@ h2{
 }
 
 .recentImg { 
+   flex-wrap: wrap;
    height: 400px;
-   width: auto;
+   width: 100%;
+   max-width: 100%;
+   margin-top: 2em;
+}
+
+.projectText { 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 50%;
+   padding: 3em;
+}
+
+.projectText h4 {
+   font-family: 'Karla', sans-serif;
+   font-weight: 700;
+   font-size: 1.5em;
+}
+
+.projectText p { 
+   font-family: 'Karla', sans-serif;
+   font-weight: 400;
+   font-size: 1.5em;
+   letter-spacing: .1em;
+   line-height: 1.5em;
+}
+
+.fontAwesome{ 
+   width: 100%;
+   height: 150px;
+   position: relative;
+   line-height: 15px;
+   letter-spacing: 1.4px;
+}
+
+.fontAwesome ul { 
+   display: flex;
+   width: 100%;
+   flex-wrap: wrap;
+   justify-content: start;
+}
+.fontAwesome li  { 
+   margin:20px;
+}
+.fontAwesome p { 
+   font-size: 12.5px;
+   text-align: center;
+}
+
+
+/* .pencilDiv{
+   display: flex;
+   width: 100%;
+   
 }
 
 .pencilImg { 
-   margin-top: 10%;
-   width: 35%;
+   justify-content: center;
+   width: 25%;
    height: auto;
-}
+} */
 
 /* Footer */
 
 footer { 
    margin-top: 2em;
-   height: 90vh;
+   height: 30vh;
    text-align: center;
-}
-
-.footerDiv { 
-   position: absolute;
-   text-align: center;
-
+   background-color:rgba(7, 7, 7, 0.119);
 }
