@@ -133,7 +133,7 @@ h1 {
    text-align: left;
    width: 65%;
    border-bottom: 1px solid black;
-   margin-top: 4em;
+   margin-top: 3.5em;
 
 }
 
@@ -143,7 +143,7 @@ h1 {
    font-weight: 400;
    text-align: left;
    letter-spacing: 2.5px;
-   width:56%;
+   width:70%;
 }
 
 .headerImg { 
@@ -234,7 +234,9 @@ h1 {
    font-weight: 400;
    text-align: center;
    width: 80%;
-   margin-top: 25em;
+}
+.blurbSection { 
+   margin-top: 30em;
 }
 
 .designOrientated h2 {
@@ -250,11 +252,13 @@ h1 {
    width: 90%;
    text-align: center;
    margin-left: 3em;
+   margin-bottom: 3em;
 }
 
 .createImg { 
-   width: 75%;
+   width: 65%;
    border: 1px solid black;
+   margin-bottom: .2em;
 }
 
 /* Services */
@@ -262,14 +266,15 @@ h1 {
 .servicesSec{ 
    color: rgba(0, 0, 0, 0.968);
    height: 100vh;
-   margin-bottom: 5em;
-   background-color:rgba(7, 7, 7, 0.019);
+   margin-bottom: 1em;
+   background-color:rgba(224, 221, 221, 0.05);
 }
 
 .servicesTitle {
    display: flex;
    flex-direction: column;
-   font-weight: 400;
+   justify-content: center;
+   font-weight: 00;
    text-align: center;
    height: 45vh;
 
@@ -289,25 +294,30 @@ h1 {
    display: flex;
    height: 55vh;
    color: rgba(0, 0, 0, 0.968);
-   background-color:rgba(7, 7, 7, 0.010);
+}
+
+.servicesDiv { 
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-right: 3em;
 }
 .services h4 { 
-   flex-wrap: wrap;
    font-size: 2.5em;
-   width: 90%;
+   width: 100%;
    text-align: center;
    
 }
 .services p { 
-   flex-wrap: wrap;
    font-size: 1.7em;
    /* margin: 15px; */
-   padding: 20px;
-   width: 90%;
+   padding: 30px;
+   width: 95%;
    height: 50%;
    text-align: center;
    border-right: 2px dotted grey;
 }
+
 
 /* Recent Works */
 .recentSec { 
@@ -317,10 +327,13 @@ h1 {
 .recentText { 
    display: flex;
    flex-wrap: wrap;
-   height: 45vh;
+   justify-content: center;
+   height: 40vh;
    width:100%;
    text-align: center;
    color: rgba(0, 0, 0, 0.968);
+   border-top: 100px solid rgba(0, 0, 0, 0.04);
+   margin-top: 5em;
 
 }
 
@@ -358,7 +371,7 @@ h1 {
    justify-content: end;
    height: 550px;
    width: 97%;
-   background-color:rgba(7, 7, 7, 0.027);
+   background-color: rgba(0, 0, 0, 0.02);
    margin-bottom:3em;
 
 }
@@ -373,6 +386,17 @@ h1 {
 .recentLinks a { 
    font-weight: 700;
    margin-bottom: 1px solid grey;
+}
+
+.logoBranding { 
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.logoBranding img { 
+   width: 55%;
+   border: 1px solid black;
 }
 
 .recentImg { 
@@ -458,4 +482,33 @@ footer {
    font-size: .7em;
    line-height: 35px;
    letter-spacing: 1.9px;
+}
+
+
+/* About Page */
+
+
+.vaseDiv { 
+   display: flex;
+   position: absolute;
+   justify-content: center;
+   width: 100%;
+   top: 0;
+}
+
+.vaseImg { 
+   width: 100%;
+}
+
+.pencilDiv { 
+   display: flex;
+   position: relative;
+   justify-content: center;
+   width: 100%;
+   margin-top: 3em;
+}
+
+.pencilImg { 
+   width: 20%;
+   border: 1px solid black;
 }
